@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BMI CALCULATOR</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <section class="Header">
+        <h1>BODY MASS INDEX CALCULATOR</h1>
+        <p>Body mass index is a value derived from the mass and height of a person.<br>Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.<br> The BMI is defined as the body mass divided by the square of the body height.<br> BMI is expressed in units of kg/m², resulting from mass in kilograms and height in metres.</p>
+    </section>
+	<div class="wrapper">
+		<div style="text-align: center; font-weight: bold;">Body Mass Index Calculator</div>
+		<p>Height in cm:
+			<input type="text" id="height"><br><span id="height_error"></span>
+		</p>
+		<p>Weight in Kg: 
+			<input type="text" id="weight"><br><span id="weight_error"></span>
+		</p>
+		<button id="btn">Calculate</button>
+		<p id="output" style="text-align: center;"></p>
+	</div>
+    <section class="Footer">
+        <div>Created by : Mohnish Karthikeyan</div>
+        <div>
+            <a href="https://www.linkedin.com/in/mohnish-karthikeyan-76ba06220/" target="_blank"><img src="data:image/png;base64,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"></a>
+            <a href="https://github.com/MohnishKarthikeyan" target="_blank"><img src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU"></a>
+        </div>
+    </section>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
