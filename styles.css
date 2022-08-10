@@ -1,0 +1,102 @@
+body
+{
+	margin: 0%;
+	padding: 0%;
+	color: white;
+	background-color: #80ffe5;
+}
+.Header
+{
+	font-weight: bold;
+	color: black;
+	text-align: center;
+	margin: 50px ;
+}
+.Header p
+{
+	font-size: 20px;
+}
+span
+{
+	margin-top: 3px;
+	color: red;
+	font-weight: bold;
+}
+.wrapper
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	padding: 15px;
+	background-color: black;
+	border-radius: 10px;
+	box-shadow: rgba(38, 57, 77) 0px 20px 30px -10px;
+}
+input
+{
+	outline: none;
+	border: none;
+	padding: 7px;
+}
+button
+{
+	color: white;
+	padding: 10px;
+	border: 2px solid white;
+	background-color: black;
+	display: block;
+	margin-top: 10px;
+	cursor: pointer;
+	font-weight: bold;
+	transition: 0.5s;
+}
+button:hover
+{
+	color: black;
+	background-color: white;
+	font-weight: bold;
+}
+@media (max-width: 1075px)
+{
+	.Header p
+	{
+		font-size: 16px;
+	}
+}
+@media (max-width: 700px)
+{
+	.Header p
+	{
+		font-size: 14px;
+	}
+}
+@media (max-width: 600px)
+{
+	.Header p
+	{
+		font-size: 12px;
+	}
+}
+@media (max-width: 550px)
+{
+	.Header p
+	{
+		font-size: 10px;
+	}
+}
+.Footer 
+{
+	color: black;
+	margin-top: 475px;
+    text-align: center;
+    font-size: 25px;
+}
+.Footer a img
+{
+	width:  30px;
+	height: 30px;
+	padding: 5px;
+	justify-items: center;
+	justify-content: center;
+}
